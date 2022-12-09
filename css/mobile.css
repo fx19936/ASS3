@@ -1,0 +1,146 @@
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+
+  .none {
+    width: auto;
+  }
+
+  h2 {
+    color: #444;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 64px;
+  }
+
+  /* 1. Xây dựng phần ảnh Banner */
+
+  #banner {
+    line-height: 1.1px;
+    height: 100vh;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text span {
+    font-size: 10px;
+  }
+
+  /* 2. Xây dựng Navbar */
+
+  #havt {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    margin-left: 30px;
+    border: 0;
+  }
+
+  .navbar a {
+    border: 0;
+    align-self: flex-start;
+  }
+
+  /* 3. Xây dựng Thông tin cá nhân  */
+
+  #about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #target,
+  #personal-info {
+    padding: 32px;
+    height: auto;
+  }
+
+  /* 4. Xây dựng phần Thông tin nghề nghiệp
+5. Xây dựng phần Sở thích
+6. Xây dựng phần "Ngôn Ngữ", "Kỹ Năng" */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .con-icons {
+    font-size: 44px;
+    text-align: start;
+    margin-top: 48px;
+  }
+  .one-roku {
+    height: auto;
+  }
+
+  /* 7. Xây dựng phần Chứng chỉ - Giải thưởng  */
+
+  .chchi-two::before {
+    display: none;
+  }
+  .img-cc {
+    width: 100%;
+  }
+  .chchi-one {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .chchi-two {
+    border-top: 1px solid #d6c08d;
+    padding-top: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .chchi-san {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .chchi {
+    display: flex;
+    flex-direction: column;
+  }
+  /* 8. Xây dựng phần Dự án */
+
+  .da-chung {
+    display: flex;
+    flex-direction: column;
+  }
+  .duan img {
+    width: 100%;
+  }
+
+  #td-one {
+    padding-bottom: 0;
+  }
+  #td-san {
+    padding-bottom: 0;
+  }
+  .da-strong-two {
+    grid-template-columns: 1fr 40px 5fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .icon-user {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .ic-hotairballoon {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: center;
+    padding-bottom: 15px;
+  }
+  .text-ichi {
+    grid-row: 2/3;
+    align-self: center;
+  }
+  .text-ni {
+    grid-row: 3/4;
+    align-self: center;
+    padding-bottom: 15px;
+  }
+}

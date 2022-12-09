@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #868e96;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #444;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 64px;
+}
+
+.none {
+  margin: 0 auto;
+  width: 1600px;
+}
+
+/* 1. Xây dựng phần ảnh Banner */
+
+#banner {
+  color: #f7f7f7;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.banner-text span {
+  font-size: 16px;
+  color: #f7f7f7a3;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* 2. Xây dựng Navbar */
+/* .navbar {
+  justify-content: center !important;
+} */
+
+.navbar {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c9c9c9;
+  height: 54px;
+  gap: 0;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-left: 0.1px solid #c9c9c9;
+  border-right: 0.1px solid #c9c9c9;
+  border-collapse: collapse;
+  width: 200px;
+  font-size: 16px;
+  color: #444;
+  padding: 10px;
+  margin: 0;
+}
+
+i {
+  color: #199cdb;
+}
+
+#havt {
+  width: 300px;
+  border-left: 0;
+}
+
+.avt {
+  transform: scale(7);
+  border-radius: 50%;
+  border: 1.5px solid #f7f7f7;
+}
+
+/* 3. Xây dựng Thông tin cá nhân  */
+
+#about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#target,
+#personal-info {
+  background-color: #f8f9fa;
+  padding: 64px;
+  height: 600px;
+}
+#personal-info {
+  background-color: #f1f3f5;
+}
+
+.section-title {
+  margin-bottom: 32px;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+.mt-40 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.strong {
+  color: #444;
+}
+
+.sns-icon {
+  margin: 48px 0;
+}
+
+/* 4. Xây dựng phần Thông tin nghề nghiệp
+5. Xây dựng phần Sở thích
+6. Xây dựng phần "Ngôn Ngữ", "Kỹ Năng" */
+
+.container {
+  justify-content: center;
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 420px 420px 420px;
+  grid-template-rows: 800px 600px;
+  gap: 48px;
+}
+
+.con-one {
+  border: 1px solid #c9c9c9;
+  display: grid;
+  grid-template-columns: 315px 105px;
+  grid-template-rows: 150px 1fr;
+  position: relative;
+}
+
+.h-two {
+  margin-left: 48px;
+}
+
+.con-icons {
+  font-size: 52px;
+  color: #c9c9c9;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.con-shita {
+  grid-column: 1/-1;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.ue {
+  margin-top: 32px;
+}
+
+.time {
+  font-style: italic;
+}
+
+.timexx,
+.timezz {
+  display: inline-block;
+}
+
+.timezz {
+  margin-left: 3px;
+  padding: 1px 16px;
+  background-color: #199cdb;
+  color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.shita-text {
+  margin-top: 12px;
+}
+
+.con-shita-ten {
+  margin-left: 80px;
+}
+
+.ue::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #199cdb;
+  padding: 5px;
+  border-radius: 50%;
+  left: 48px;
+  transform: translate(0, 75%);
+}
+
+.lever {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 55px;
+}
+
+#unl {
+  background: #c9c9c9;
+}
+
+.ueno {
+  margin-top: 32px;
+}
+
+.shyumi {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 0.4em;
+}
+
+.shyumi-icon {
+  font-size: 24px;
+  border: 1px solid #199cdb;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  margin: 14px 6px;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5em 0.4em;
+}
+
+/* 7. Xây dựng phần Chứng chỉ - Giải thưởng  */
+
+#certificate {
+  padding: 64px 92px;
+  margin-top: 64px;
+}
+
+#cchi {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.hoa {
+  text-transform: uppercase;
+}
+
+.img-cc {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.img-migi {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.chchi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 52px;
+  column-gap: 36px;
+  position: relative;
+}
+
+.chchi-san {
+  grid-column: 1/-1;
+  padding-top: 64px;
+  border-top: 1px solid #d6c08d;
+}
+
+.chchi-two::before {
+  position: absolute;
+  content: "";
+  background-color: #d6c08d;
+  height: 135px;
+  width: 1px;
+  left: 49%;
+}
+
+/* 8. Xây dựng phần Dự án */
+
+#icon-san {
+  color: #444;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.da-text {
+  display: inline-block;
+}
+
+.da-time {
+  padding: 6px 12px;
+  background-color: #199cdb;
+  color: #f7f7f7;
+  border-radius: 18px;
+  display: inline-block;
+  border-collapse: collapse;
+}
+
+.da-strong {
+  padding: 16px;
+  border: 1px solid #444;
+  border-collapse: collapse;
+}
+
+.duan {
+  border-collapse: collapse;
+}
+
+tr {
+  display: block;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 16px;
+}
+
+#project {
+  padding: 92px;
+}
+
+.da-chung {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.table-td {
+  width: 115px;
+}
+
+#td-one {
+  padding-bottom: 54px;
+}
+
+#td-san {
+  padding-bottom: 27px;
+}
+
+.td-sai {
+  vertical-align: top;
+}
+
+#icon-shi {
+  display: block;
+  padding-left: 10px;
+}
+/* 9. Xây dựng phần Liên hệ */
+/* đã chuyển qua dùng bootstrap */

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "TNTER", sans-serif;
+  font-size: 18px;
+}
+
+.digital {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
+  border: 10px solid blue;
+  background-color: #e7f5ff;
+}
+.dig {
+  border: 10px solid blue;
+  border-collapse: collapse;
+  padding: 20px;
+  padding-bottom: 32px;
+}
+.dig-3 {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+
+h1 {
+  padding: 20px 0;
+  border-bottom: 2px solid #adb5bd;
+}
+h2 {
+  font-size: 24px;
+}
+.goa {
+  border-bottom: 1px solid #adb5bd;
+}
+.tim {
+  border-bottom: 1px dotted #9775fa;
+}
+.iconz {
+  font-size: 30px;
+  grid-row: 1/-1;
+  align-self: center;
+  margin: 30px;
+  margin-right: 48px;
+}
+.goa,
+.tea,
+.tim {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  line-height: 1.5;
+  padding: 20px;
+}
+.goa h2 {
+  align-self: center;
+}
+
+.icon-user {
+  width: 28px;
+  grid-row: 1/3;
+  align-self: center;
+  margin-right: 30px;
+}
+.tea span {
+  align-self: flex-end;
+}
+.tim span {
+  font-size: 20px;
+  height: 42px;
+  width: 42px;
+  color: #e7f5ff;
+  background-color: #9775fa;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid #862e9c;
+  grid-row: 1/3;
+  align-self: center;
+  margin-right: 26px;
+}
+
+.str {
+  margin: 24px 0;
+}
+.tex {
+  margin: 16px 0;
+}
+.sco-1 {
+  display: inline-block;
+  width: 48%;
+}
+.sco-2 {
+  display: inline-block;
+  width: 48%;
+  margin-left: 3%;
+}
+.primary {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 24px;
+}
+.icon-one {
+  width: 28px;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 24px;
+  align-self: center;
+  justify-self: center;
+}
+.icon-two {
+  width: 28px;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 24px;
+  align-self: center;
+  justify-self: center;
+}
+.text-one {
+  grid-column: 2;
+  grid-row: 1/2;
+  align-self: center;
+}
+.text-two {
+  grid-column: 2;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+/* Tablet  */
+/* and */
+/* Mobile */
+@media (max-width: 768px) {
+  .digital {
+    display: flex;
+    flex-direction: column;
+  }
+  .dig-3 {
+    order: 5;
+  }
+  .dig-2 {
+    order: 3;
+  }
+  .dig-5 {
+    order: 4;
+  }
+  .goa,
+  .tea,
+  .tim {
+    display: flex;
+    flex-direction: column;
+  }
+  .goa h2,
+  .tea span,
+  .tim span {
+    align-self: flex-start;
+  }
+  .iconz,
+  .icon-user,
+  .icon-one,
+  .icon-two {
+    margin: 0;
+  }
+
+  .sco-1,
+  .sco-2 {
+    display: inline;
+  }
+  .primary {
+    display: flex;
+    flex-direction: column;
+  }
+}
